@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Ginside/Sample/GinsideSample.uss?fileID=7433441132597879392&amp;guid=cb3d185a3c6f046dab86af04b9d06e47&amp;type=3#GinsideSample" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+        <ui:Label text="Ginside SDK test " display-tooltip-when-elided="true" />
+        <ui:GroupBox style="height: 80%; flex-direction: row;">
+            <ui:ListView name="chat-list" class="cuslist" style="position: relative; width: 50%;" />
+            <ui:GroupBox style="flex-direction: column; width: 50%;">
+                <ui:Label text="channel list " display-tooltip-when-elided="true" />
+                <ui:ListView name="channel-list" focusable="true" class="cuslist" style="height: 50%; width: 100%;" />
+                <ui:Label text="" display-tooltip-when-elided="true" />
+                <ui:Label text="program list " display-tooltip-when-elided="true" />
+                <ui:ListView name="program-list" focusable="true" class="cuslist" style="height: 50%; width: 100%;" />
+            </ui:GroupBox>
+        </ui:GroupBox>
+
+        <ui:GroupBox>
+            <ui:TextField picking-mode="Ignore" value="Message" text="Message">
+                <ui:Button name="send" text="Send" display-tooltip-when-elided="true" />
+                <ui:Button name="record" text="Record" display-tooltip-when-elided="true" />
+            </ui:TextField>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>
